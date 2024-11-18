@@ -1,0 +1,348 @@
+.Hero {
+  &-wrapper {
+    width: 100%;
+    margin-bottom: 3.4rem;
+    margin-top: 5.8rem;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+
+  &-information-wrapper {
+    width: 100%;
+    max-width: 698px;
+  }
+
+  &-greeting {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.72px;
+    margin: 0;
+  }
+
+  &-creator-name {
+    color: map-get($orangescale, "650");
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.96px;
+    margin: 0;
+  }
+
+  &-titles-wrapper {
+    line-height: 1.1;
+    padding-bottom: 15px;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 2;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+
+  &-subtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-indent: 105px;
+    margin: 0;
+    margin-top: -0.8em;
+  }
+
+
+  &-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.63px;
+    padding-bottom: 5px;
+  }
+
+  &-hire-me-button {
+    font-size: 12px;
+    height: 30px;
+    max-width: 95px;
+  }
+
+  &-image-wrapper {
+    position: relative;
+  }
+
+  &-image {
+    background-image: url("../../../assets/images/hero-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 410px;
+    width: 350px;
+  }
+
+  &-image-square {
+    background-image: url("../../../assets/images/square.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    position: absolute;
+    top: 65px;
+    left: 77px;
+    width: 180px;
+  }
+
+  &-social-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+
+  &-social-media-item {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .Hero {
+    &-wrapper {
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+    }
+
+    &-container {
+      max-width: 610px;
+      flex-direction: row;
+    }
+
+    &-information-wrapper {
+      max-width: 340px;
+    }
+
+    &-titles-wrapper {
+      line-height: 1.1;
+      padding-bottom: 15px;
+    }
+
+    &-title {
+      font-size: 40px;
+      letter-spacing: 1.5px;
+    }
+
+    &-subtitle {
+      font-size: 40px;
+      letter-spacing: 1.5px;
+      text-indent: 104px;
+    }
+
+    &-greeting {
+      font-size: 12px;
+    }
+
+    &-creator-name {
+      font-size: 14px;
+    }
+
+    &-image {
+      height: 275px;
+      width: 230px;
+    }
+
+    &-image-square {
+      top: 35px;
+      height: 35px;
+      left: 37px;
+      width: 151px;
+    }
+
+    &-description {
+      font-size: 10px;
+    }
+
+    &-hire-me-button {
+      font-size: 10px;
+      height: 25px;
+      max-width: 85px;
+    }
+
+    &-social-layout {
+      gap: 0.8rem;
+    }
+
+    &-media-item {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .Hero {
+    &-container {
+      max-width: 720px;
+    }
+
+    &-information-wrapper {
+      max-width: 380px;
+    }
+
+
+    &-description {
+      font-size: 11px;
+    }
+
+    &-image {
+      height: 310px;
+      width: 265px;
+    }
+
+    &-image-square {
+      top: 35px;
+      height: 42px;
+      left: 43px;
+      width: 180px;
+    }
+
+    &-social-layout {
+      gap: 0.7rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .Hero {
+    &-container {
+      max-width: 912px;
+    }
+
+    &-information-wrapper {
+      max-width: 470px;
+    }
+
+    &-greeting {
+      font-size: 15px;
+    }
+
+    &-creator-name {
+
+      font-size: 17px;
+    }
+
+    &-title {
+      font-size: 65px;
+    }
+
+    &-subtitle {
+      font-size: 65px;
+      text-indent: 155px;
+    }
+
+
+    &-description {
+      font-size: 13px;
+    }
+
+    &-hire-me-button {
+      font-size: 13px;
+      height: 30px;
+      max-width: 110px;
+    }
+
+    &-image {
+      height: 400px;
+      width: 340px;
+    }
+
+    &-image-square {
+      top: 47px;
+      height: 49px;
+      left: 55px;
+      width: 230px;
+
+    }
+
+    &-social-layout {
+      gap: 1.2rem;
+    }
+
+    &-social-media-item {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .Hero {
+    &-wrapper {
+      margin-bottom: 5rem;
+    }
+
+    &-container {
+      max-width: 1360px;
+      padding: 0;
+    }
+
+    &-information-wrapper {
+      width: 100%;
+      max-width: 698px;
+    }
+
+    &-greeting {
+      font-size: 24px;
+    }
+
+    &-creator-name {
+      font-size: 32px;
+    }
+
+    &-title {
+      font-size: 100px;
+    }
+
+    &-subtitle {
+      font-size: 100px;
+      text-indent: 230px;
+    }
+
+    &-description {
+      font-size: 21px;
+      padding-bottom: 5px;
+
+    }
+
+    &-hire-me-button {
+      font-size: 21px;
+      height: 52px;
+      max-width: 188px;
+    }
+
+    &-image {
+      height: 620px;
+      width: 538px;
+    }
+
+    &-image-square {
+      height: 78px;
+      top: 75px;
+      left: 70px;
+      width: 374px;
+    }
+
+    &-social-media-item {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

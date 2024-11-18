@@ -1,0 +1,127 @@
+.Footer {
+  &-wrapper {
+    align-items: center;
+    background-color: map-get($grayscale, "150");
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 350px;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+  }
+
+  &-logo {
+    height: auto;
+    width: 100%;
+    max-width: 180px;
+  }
+
+  &-menu-items {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 17px;
+    letter-spacing: 0.63px;
+    list-style-type: none;
+    justify-content: center;
+    width: 250px;
+    padding: 0;
+    word-wrap: break-word;
+
+  }
+
+  &-social-media-items {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 17px;
+    letter-spacing: 0.63px;
+    list-style-type: none;
+    justify-content: center;
+    width: 250px;
+    padding: 0;
+    word-wrap: break-word;
+  }
+
+  &-menu-item {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &-social-media-item {
+    height: 20px;
+    width: 20px;
+  }
+
+  &-all-rights {
+    background-color: map-get($grayscale, "300");
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &-all-rights-text {
+    color: $white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.63px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  &-brand-name {
+    color: map-get($orangescale, "650");
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+  .Footer {
+    &-menu-items {
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .Footer {
+    &-wrapper {
+      height: 552px;
+    }
+
+    &-logo {
+      max-width: 275px;
+      margin-top: -2rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &-menu-items {
+      gap: 40px;
+      padding-bottom: 1.5rem;
+    }
+
+    &-menu-item {
+      font-size: 21px;
+    }
+
+    &-social-media-item {
+      height: 32px;
+      width: 32px; 
+    }
+    &-social-media-items {
+      gap: 25px;
+    }
+
+    &-all-rights {
+      height: 80px;
+    }
+
+    &-all-rights-text {
+      font-size: 21px;
+    }
+  }
+}

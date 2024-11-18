@@ -1,0 +1,71 @@
+.ServicesCard {
+    &-wrapper {
+        background-color: map-get($grayscale, "150");
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 200px;
+        justify-content: center;
+        padding: 15px;
+        width: 185px;
+    }
+
+    &-image {
+        height: 50px;
+        width: 50px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 0.96px;
+        margin-top: 0;
+        margin-bottom: 10px;
+
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.57px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .ServicesCard {
+        &-title {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        &-description {
+            font-size: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .ServicesCard {
+        &-wrapper {
+            height: 315px;
+            width: 330px;
+        }
+        &-image {
+            height: 82px;
+            width: 82px;
+        }
+        &-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        &-description {
+            font-size: 19px;
+        }
+    }
+}

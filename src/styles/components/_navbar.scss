@@ -1,0 +1,257 @@
+.Navbar-header {
+    &-main {
+        background-color: $white;
+        font-family: $font-family;
+        padding: 1.3rem 0 1.3rem 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+    }
+
+    &-container {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 20rem;
+    }
+
+    &-menu-bars {
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        display: block;
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            background-color: #333;
+            height: 3px;
+            margin: 2px 0;
+            transition: 0.4s;
+            width: 20px;
+        }
+
+        &.change .bar1 {
+            transform: translate(0, -1px) rotate(-45deg);
+        }
+
+        &.change .bar2 {
+            opacity: 0;
+        }
+
+        &.change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+    }
+
+    &-logo {
+        height: 35px;
+        max-width: 150px;
+        width: 100%;
+    }
+
+    &-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-menu-items {
+        align-items: center;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: flex-end;
+        padding: 0 0 1rem 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 1rem 0;
+        width: 100%;
+        box-shadow: 3px 21px 35px -28px $black;
+        -webkit-box-shadow: 3px 21px 35px -28px $black;
+        -moz-box-shadow: 3px 21px 35px -28px $black;
+
+        &.show {
+            display: none;
+        }
+
+        &.hide {
+            display: block;
+        }
+    }
+
+    &-menu-item {
+        color: $black;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.63px;
+        margin: 6px 0 20px 0;
+        word-wrap: break-word;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+
+        &.download {
+            height: 25px;
+            width: 100px;
+
+            a {
+                color: $white;
+            }
+
+        }
+
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    .Navbar-header {
+        &-main {
+            margin-top: 1.5rem;
+            position: static;
+        }
+
+        &-container {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            max-width: 610px;
+        }
+
+        &-menu-bars {
+            display: none;
+        }
+
+        &-logo {
+            height: 30px;
+            max-width: 110px;
+        }
+
+        &-menu {
+            flex-direction: row;
+        }
+
+        &-menu-items {
+            flex-direction: row;
+            box-shadow: none;
+            margin: 0;
+            position: static;
+            padding: 0;
+
+            &.show,
+            &.hide {
+                display: flex;
+            }
+        }
+
+        &-menu-item {
+            font-size: 10px;
+            margin: 0 7px;
+
+            &.download {
+                height: 25px;
+                width: 85px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Navbar-header {
+        &-main {
+            margin-top: 2rem;
+        }
+
+        &-container {
+            max-width: 720px;
+        }
+
+        &-logo {
+            height: 35px;
+            max-width: 150px;
+        }
+
+        &-menu-item {
+            font-size: 11px;
+            margin: 0 10px;
+
+            &.download {
+                height: 30px;
+                width: 95px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .Navbar-header {
+
+        &-main {
+            margin-top: 2.4rem;
+        }
+
+        &-container {
+            max-width: 912px;
+        }
+
+        &-logo {
+            height: 40px;
+            max-width: 165px;
+        }
+
+        &-menu-items {
+            margin: 0;
+        }
+
+        &-menu-item {
+            font-size: 13px;
+            margin: 0 15px;
+
+            &.download {
+                height: 40px;
+                width: 140px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .Navbar-header {
+
+        &-main {
+            margin-top: 3.5rem;
+            margin-bottom: 7rem;
+        }
+
+        &-container {
+            max-width: 1360px;
+            padding: 0;
+        }
+
+        &-logo {
+            height: 70px;
+            max-width: 260px;
+        }
+
+        &-menu-item {
+            font-size: 21px;
+            margin: 0 20px;
+
+            &.download {
+                height: 52px;
+                width: 180px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+
+@import "base/fonts";
+@import "base/variables";
+@import "base/reset";
+
+@import "components/about-me";
+@import "components/button";
+@import "components/contact-me";
+@import "components/footer";
+@import "components/hero";
+@import "components/input/input-range";
+@import "components/navbar";
+@import "components/services";
+@import "components/services-card";
+@import "components/testimonials";
+@import "components/my-projects";
+@import "components/my-projects-example";

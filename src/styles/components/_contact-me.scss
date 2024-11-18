@@ -1,0 +1,195 @@
+.ContactMe {
+    &-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 3rem auto;
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 1.95px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.63px;
+        text-align: center;
+        margin: 0 auto 45px auto;
+    }
+
+    &-contact-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &-contact-input {
+        background-color: map-get($grayscale, "150");
+        border: 0.40px solid map-get($grayscale, "100");
+        border-radius: 5px;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: 0.63px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 0.5rem;
+        width: 200px;
+    }
+
+    &-button-wrapper {
+        font-size: 12px;
+        height: 35px;
+        width: 100%;
+        max-width: 120px;
+
+        .Button-wrapper {
+            padding: 0 5px;
+
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .ContactMe {
+        &-container {
+            max-width: 610px;
+        }
+
+
+        &-description {
+            font-size: 10px;
+            max-width: 400px;
+        }
+
+        &-contact-form {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .ContactMe {
+        &-container {
+            max-width: 720px;
+        }
+
+        &-title {
+            font-size: 35px;
+        }
+
+        &-description {
+            font-size: 10px;
+            max-width: 500px;
+        }
+
+        &-contact-form {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        &-button-wrapper {
+            font-size: 11px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .ContactMe {
+        &-container {
+            max-width: 912px;
+        }
+
+        &-title {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        &-description {
+            font-size: 13px;
+        }
+
+        &-button-wrapper {
+            font-size: 13px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .ContactMe {
+        &-wrapper { 
+            margin-bottom: 7rem;
+        }
+
+        &-container {
+            max-width: 1360px;
+        }
+
+        &-title {
+            font-size: 65px;
+            margin-bottom: 30px;
+        }
+
+        &-description {
+            font-size: 21px;
+            max-width: 900px;
+            margin-bottom: 5rem;
+        }
+
+        &-contact-form {
+            align-items: center;
+            height: 75px;
+            justify-content: space-evenly;
+            max-width: 915px;
+        }
+
+        &-contact-input {
+            border-radius: 14px;
+            font-size: 21px;
+            height: 100%;
+            padding: 0 23px;
+            margin: 0;
+            width: 580px;
+        }
+
+        &-button-wrapper {
+            font-size: 24px;
+            height: 100%;
+            max-width: 222px;
+
+            .Button-wrapper {
+                border-radius: 14px;
+
+            }
+        }
+
+    }
+}
+
+/* Range Slider as a Single Thumb Slider */
+.single-thumb .range-slider__thumb[data-lower] {
+    width: 0;
+}
+.single-thumb .range-slider__thumb[data-upper] {
+  background-color: #EDECEC;
+  border: 2px solid #FD6F00;
+}
+
+.single-thumb .range-slider__range {
+    border-radius: 6px;
+    background-color: #faa307 ;
+} 
+

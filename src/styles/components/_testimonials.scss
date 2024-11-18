@@ -1,0 +1,329 @@
+.Testimonials {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 20rem;
+        margin: 0 auto 4rem auto;
+    }
+
+    &-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.4;
+        letter-spacing: 0.63px;
+        padding-bottom: 1rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &-carousel {
+        .slick-slide[aria-hidden="true"] {
+            opacity: 0.5;
+        }
+
+        .slick-slide>div {
+            margin: 0 10px;
+        }
+
+        .slick-list {
+            margin: 0 -10px;
+        }
+
+        .ft-slick__dots--custom {
+            height: 8px;
+            width: 20px;
+            background-color: map-get($grayscale, "80");
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .slick-dots .slick-active .ft-slick__dots--custom {
+            background-color: map-get($orangescale, "650");
+
+        }
+
+    }
+
+    &-testimonial-wrapper {
+        background-color: map-get($grayscale, "150");
+        border-radius: 14px;
+        margin-bottom: 3rem;
+    }
+
+    &-information-wrapper {
+        padding: 0.9rem 1.5rem 0.4rem 1.5rem;
+
+        blockquote::before {
+            content: "“";
+            color: map-get($orangescale, "650");
+            font-weight: 700;
+            font-size: 19px;
+            margin: 0;
+            height: 10px;
+            display: block;
+        }
+
+        blockquote::after {
+            bottom: -15px;
+            content: "“";
+            color: map-get($orangescale, "650");
+            font-weight: 700;
+            font-size: 19px;
+            position: absolute;
+            right: 19px;
+            margin: 0;
+        }
+    }
+
+
+    &-image {
+        height: 150px;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+        width: 150px;
+    }
+
+    &-person-testimonial {
+        color: map-get($grayscale, "350");
+        font-weight: 400;
+        font-size: 11px;
+        position: relative;
+        text-align: justify;
+        letter-spacing: 0.42px;
+        margin: 0;
+    }
+
+    &-person-name {
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    &-person-position {
+        font-weight: 400;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .Testimonials {
+        &-container {
+            max-width: 610px;
+        }
+
+        &-description {
+            font-size: 10px;
+            margin-bottom: 35px;
+            max-width: 400px;
+        }
+
+        &-testimonial-wrapper {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 0.5rem;
+        }
+
+        &-image {
+            width: 140px;
+        }
+
+        &-information-wrapper {
+            max-width: 19rem;
+        }
+
+        &-person-testimonial {
+            font-size: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Testimonials {
+        &-container {
+            max-width: 720px;
+        }
+
+        &-title {
+            font-size: 35px;
+        }
+
+        &-description {
+            font-size: 11px;
+            margin: 0 auto 45px auto;
+            max-width: 500px;
+        }
+
+        &-testimonial-wrapper {
+            margin-bottom: 4rem;
+        }
+
+        &-information-wrapper {
+            blockquote::after {
+                right: 17px;
+            }
+        }
+
+        &-person-testimonial {
+            font-size: 10.1px;
+        }
+    }
+}
+
+
+@include media-breakpoint-up(xl) {
+    .Testimonials {
+        &-wrapper {
+            margin-bottom: 3rem;
+        }
+
+        &-container {
+            max-width: 912px;
+        }
+
+        &-title {
+            font-size: 40px;
+        }
+
+        &-description {
+            font-size: 13px;
+            max-width: 590px;
+            width: 100%;
+            margin: 0 auto 45px auto;
+        }
+
+        &-information-wrapper {
+            max-width: 29rem;
+        }
+
+        &-testimonial-wrapper {
+            margin-bottom: 4rem;
+        }
+
+        &-information-wrapper {
+            blockquote::after {
+                font-size: 23px;
+                bottom: -17px;
+                right: 14.5rem;
+            }
+
+            blockquote::before {
+                font-size: 23px;
+                height: 8px;
+                position: relative;
+                left: -0.7rem;
+
+            }
+        }
+
+        &-person-testimonial {
+            font-size: 13px;
+        }
+
+        &-person-name {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        &-person-position {
+            font-size: 13px;
+            margin: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .Testimonials {
+        &-wrapper {
+            margin-bottom: 6rem;
+        }
+
+        &-container {
+            max-width: 1360px;
+        }
+
+        &-title {
+            font-size: 65px;
+        }
+
+        &-description {
+            font-size: 21px;
+            margin-bottom: 4.2rem;
+            max-width: 900px;
+        }
+
+        &-carousel {
+            .ft-slick__dots--custom {
+                height: 16px;
+                width: 57px;
+                border-radius: 8px;
+            }
+
+            .slick-dots li {
+                margin: 0 25px;
+            }
+        }
+
+        &-information-wrapper {
+            max-width: 698px;
+        }
+
+        &-image {
+            height: 235px;
+            margin: 0 0.5rem 0 1rem;
+            width: 235px;
+        }
+
+        &-testimonial-wrapper {
+            margin: 0 auto 4rem auto;
+            padding: 3rem 2.2rem;
+            width: 1087px;
+        }
+
+        &-information-wrapper {
+            blockquote {
+                
+                &::before {
+                    bottom: -11px;
+                    font-weight: 700;
+                    font-size: 30px;
+                    left: -1.2rem;
+                    height: 15px;
+                }
+                
+                &::after {
+                    font-weight: 700;
+                    font-size: 30px;
+                    right: 14.1rem;
+                    bottom: -22px;
+                }
+            }
+        }
+
+        &-person-testimonial {
+            font-size: 21px;
+        }
+
+
+        &-person-name {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        &-person-position {
+            font-size: 19px;
+        }
+    }
+}

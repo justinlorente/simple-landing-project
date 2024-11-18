@@ -1,0 +1,13 @@
+.Button {
+    &-wrapper {
+        align-items: center;
+        color: $white;
+        text-decoration: none;
+        background-color: map-get($orangescale, "500");
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+}

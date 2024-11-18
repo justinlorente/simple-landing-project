@@ -1,0 +1,186 @@
+.MyProjects {
+    &-wrapper {
+        margin: 0 auto 2rem auto;
+        width: 100%;
+    }
+
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &-title {
+        font-weight: 600;
+        // font-size: 45px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.63px;
+        max-width: 590px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-tabsWrapper {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 375px;
+
+        .react-tabs__tab {
+            background-color: map-get($grayscale, "150");
+            border: 0.40px solid map-get($grayscale, "100");
+            border-radius: 10px;
+            font-weight: 400;
+            margin: 0 5px;
+
+            &--selected {
+                background-color: map-get($orangescale, "650");
+                color: $white;
+            }
+
+            &-list {
+                border-bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.6rem 0;
+            }
+        }
+    }
+
+    &-examples {
+        align-items: center;
+        display: flex;
+        margin: 3rem 0;
+        flex-direction: column;
+        gap: 3rem;
+        animation: name-of-animation 2s linear;
+    }
+
+    @keyframes name-of-animation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .MyProjects {
+        &-container {
+            max-width: 610px;
+        }
+
+        &-tabsWrapper {
+            flex-wrap: nowrap;
+            justify-content: center;
+            width: 100%;
+
+            .react-tabs__tab {
+                font-size: 11px;
+
+                &-list {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+
+        &-description {
+            font-size: 10px;
+            max-width: 400px;
+        }
+
+        &-examples {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .MyProjects {
+        &-container {
+            max-width: 720px;
+        }
+
+        &-title {
+            font-size: 35px;
+        }
+
+        &-description {
+            font-size: 11px;
+            max-width: 500px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .MyProjects {
+        &-container {
+            max-width: 912px;
+        }
+
+        &-title {
+            font-size: 40px;
+        }
+
+        &-description {
+            font-size: 13px;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .MyProjects {
+        &-wrapper {
+            margin-bottom: 5rem;
+        }
+
+        &-container {
+            max-width: 1360px;
+        }
+
+        &-tabsWrapper {
+
+            .react-tabs__tab {
+                font-size: 24px;
+
+                &-list {
+                    gap: 0.7rem;
+                }
+            }
+        }
+
+        &-examples {
+            gap: 2.6rem;
+            margin: 5rem 0 3rem 0;
+        }
+
+        &-title {
+            font-size: 65px;
+        }
+
+        &-description {
+            font-size: 21px;
+            margin-bottom: 4rem;
+            max-width: 900px;
+        }
+    }
+}

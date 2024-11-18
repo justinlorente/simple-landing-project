@@ -1,0 +1,136 @@
+.Services {
+    &-wrapper {
+        width: 100%;
+    }
+
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 3rem auto;
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    &-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.63px;
+        max-width: 590px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &-products {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-app-design {
+        .ServicesCard-image {
+            width: 30px;
+        }
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    .Services {
+        &-container {
+            max-width: 610px;
+
+        }
+
+        &-description {
+            font-size: 10px;
+            max-width: 400px;
+        }
+
+        &-products {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 500px;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Services {
+        &-container {
+            max-width: 720px;
+
+        }
+
+        &-title {
+            font-size: 35px;
+        }
+
+        &-description {
+            font-size: 11px;
+            max-width: 500px;
+        }
+
+        &-products {
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .Services {
+        &-container {
+            max-width: 912px;
+
+        }
+
+        &-title {
+            font-size: 40px;
+        }
+
+        &-description {
+            font-size: 13px;
+            max-width: 500px;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .Services {
+        &-container {
+            margin-bottom: 4rem;
+            max-width: 1360px;
+        }
+
+        &-title {
+            font-size: 65px;
+        }
+
+        &-description {
+            font-size: 21px;
+            margin-bottom: 4rem;
+            max-width: 900px;
+        }
+
+        &-products {
+            gap: 30px;
+
+        }
+        &-app-design {
+            .ServicesCard-image {
+                width: 48px;
+            }
+        }
+    }
+}
