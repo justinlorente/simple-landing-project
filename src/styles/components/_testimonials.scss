@@ -48,11 +48,14 @@
             background-color: map-get($grayscale, "80");
             border-radius: 4px;
             position: relative;
+
+            span {
+                visibility: hidden;
+            }
         }
 
         .slick-dots .slick-active .ft-slick__dots--custom {
             background-color: map-get($orangescale, "650");
-
         }
 
     }
@@ -61,6 +64,7 @@
         background-color: map-get($grayscale, "150");
         border-radius: 14px;
         margin-bottom: 3rem;
+        padding-top: 1.5rem;
     }
 
     &-information-wrapper {
@@ -92,7 +96,6 @@
     &-image {
         height: 150px;
         margin: 0 auto;
-        padding-top: 1.5rem;
         position: relative;
         width: 150px;
     }
@@ -274,7 +277,6 @@
 
             .slick-dots li {
                 margin: 0 25px;
-                visibility: hidden;
             }
         }
 
@@ -296,7 +298,7 @@
 
         &-information-wrapper {
             blockquote {
-                
+
                 &::before {
                     bottom: -11px;
                     font-weight: 700;
@@ -304,7 +306,7 @@
                     left: -1.2rem;
                     height: 15px;
                 }
-                
+
                 &::after {
                     font-weight: 700;
                     font-size: 30px;
