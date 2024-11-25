@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"; // Importar el componente Link
 import facebookLogo from "../../../assets/images/facebook-logo.png";
 import twitterLogo from "../../../assets/images/twitter-logo.png";
 import instagramLogo from "../../../assets/images/instagram-logo.png";
@@ -24,9 +25,9 @@ const Hero = () => {
             tempus pharetra
           </p>
           <div className="Hero-hire-me-button">
-            <a href="#" className="Button-wrapper">
+            <Link href="#" className="Button-wrapper">
               Hire me
-            </a>
+            </Link>
           </div>
         </div>
         <div className="Hero-image-wrapper">
@@ -34,24 +35,24 @@ const Hero = () => {
           <div className="Hero-image-square" />
           <ul className="Hero-social-layout">
             <li className="Hero-social-media-item">
-              <a href="/">
-                <Image src={facebookLogo} alt="facebook" fill />
-              </a>
+              <Link href="/">
+                <Image src={facebookLogo} alt="facebook" fill/>
+              </Link>
             </li>
             <li className="Hero-social-media-item">
-              <a href="/">
-                <Image src={twitterLogo} alt="twitter" fill />
-              </a>
+              <Link href="/">
+                <Image src={twitterLogo} alt="twitter" fill/>
+              </Link>
             </li>
             <li className="Hero-social-media-item">
-              <a href="/">
-                <Image src={instagramLogo} alt="instagram" fill />
-              </a>
+              <Link href="/">
+                <Image src={instagramLogo} alt="instagram" fill/>
+              </Link>
             </li>
             <li className="Hero-social-media-item">
-              <a href="/">
-                <Image src={linkedinLogo} alt="linkedIn"  fill />
-              </a>
+              <Link href="/">
+                <Image src={linkedinLogo} alt="linkedIn" fill/>
+              </Link>
             </li>
           </ul>
         </div>
