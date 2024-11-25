@@ -17,7 +17,7 @@ const Testimonials = () => {
 
     customPaging: (i) => (
       <div className="ft-slick__dots--custom">
-        <span>{i + 1}</span>
+        <span>{i + 0}</span>
       </div>
     ),
 
@@ -63,7 +63,7 @@ const Testimonials = () => {
             <div>
               <div className="Testimonials-testimonial-wrapper">
                 <div className="Testimonials-image">
-                  <Image src={testimonialImg} alt="" />
+                  <Image src={testimonialImg} alt="" fill />
                 </div>
                 <div className="Testimonials-information-wrapper">
                   <blockquote className="Testimonials-person-testimonial">
@@ -82,7 +82,7 @@ const Testimonials = () => {
             <div>
               <div className="Testimonials-testimonial-wrapper">
                 <div className="Testimonials-image">
-                  <Image src={testimonialImg} alt="" />
+                  <Image src={testimonialImg} alt="" fill />
                 </div>
                 <div className="Testimonials-information-wrapper">
                   <blockquote className="Testimonials-person-testimonial">
@@ -101,7 +101,7 @@ const Testimonials = () => {
             <div>
               <div className="Testimonials-testimonial-wrapper">
                 <div className="Testimonials-image">
-                  <Image src={testimonialImg} alt="" />
+                  <Image src={testimonialImg} alt="" fill />
                 </div>
                 <div className="Testimonials-information-wrapper">
                   <blockquote className="Testimonials-person-testimonial">
@@ -120,7 +120,7 @@ const Testimonials = () => {
             <div>
               <div className="Testimonials-testimonial-wrapper">
                 <div className="Testimonials-image">
-                  <Image src={testimonialImg} alt="" />
+                  <Image src={testimonialImg} alt="" fill />
                 </div>
                 <div className="Testimonials-information-wrapper">
                   <blockquote className="Testimonials-person-testimonial">

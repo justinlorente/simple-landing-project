@@ -93,6 +93,7 @@
         height: 150px;
         margin: 0 auto;
         padding-top: 1.5rem;
+        position: relative;
         width: 150px;
     }
 
@@ -273,6 +274,7 @@
 
             .slick-dots li {
                 margin: 0 25px;
+                visibility: hidden;
             }
         }
 

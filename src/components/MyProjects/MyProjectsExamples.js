@@ -8,7 +8,7 @@ const MyProjectsSamples = (props) => {
   return (
     <div className="MyProjectsExamples-wrapper">
       <div className="MyProjectsExamples-images">
-        <Image src={image} alt="" />
+        <Image src={image} alt="" fill />
       </div>
       <div className="MyProjectsExamples-information">
         <h4 className="MyProjectsExamples-type">{projectType}</h4>

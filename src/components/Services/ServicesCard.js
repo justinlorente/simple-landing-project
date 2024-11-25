@@ -8,7 +8,7 @@ const ServicesCard = (props) => {
   return (
     <div className={`ServicesCard-wrapper ${customClass}`}>
       <div className="ServicesCard-image">
-        <Image src={image} alt="" />
+        <Image src={image} alt="" fill />
       </div>
       <h3 className="ServicesCard-title">{title}</h3>
       <p className="ServicesCard-description">

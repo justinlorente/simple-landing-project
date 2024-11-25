@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import facebookLogo from "../../../assets/images/facebook-logo.png";
 import twitterLogo from "../../../assets/images/twitter-logo.png";
 import instagramLogo from "../../../assets/images/instagram-logo.png";
@@ -25,9 +24,9 @@ const Hero = () => {
             tempus pharetra
           </p>
           <div className="Hero-hire-me-button">
-            <Link href="#" className="Button-wrapper">
+            <a href="#" className="Button-wrapper">
               Hire me
-            </Link>
+            </a>
           </div>
         </div>
         <div className="Hero-image-wrapper">
@@ -35,24 +34,24 @@ const Hero = () => {
           <div className="Hero-image-square" />
           <ul className="Hero-social-layout">
             <li className="Hero-social-media-item">
-              <Link href="/">
-                <Image src={facebookLogo} alt="facebook" />
-              </Link>
+              <a href="/">
+                <Image src={facebookLogo} alt="facebook" fill />
+              </a>
             </li>
             <li className="Hero-social-media-item">
-              <Link href="/">
-                <Image src={twitterLogo} alt="twitter" />
-              </Link>
+              <a href="/">
+                <Image src={twitterLogo} alt="twitter" fill />
+              </a>
             </li>
             <li className="Hero-social-media-item">
-              <Link href="/">
-                <Image src={instagramLogo} alt="instagram" />
-              </Link>
+              <a href="/">
+                <Image src={instagramLogo} alt="instagram" fill />
+              </a>
             </li>
             <li className="Hero-social-media-item">
-              <Link href="/">
-                <Image src={linkedinLogo} alt="linkedIn" />
-              </Link>
+              <a href="/">
+                <Image src={linkedinLogo} alt="linkedIn"  fill />
+              </a>
             </li>
           </ul>
         </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className="Navbar-header-main">
       <div className="Navbar-header-container">
         <div className="Navbar-header-logo">
-          <Image src={Logo} alt="" />
+          <Image src={Logo} alt="" fill/>
         </div>
         <div
           className={`Navbar-header-menu-bars ${changeClass}`}
